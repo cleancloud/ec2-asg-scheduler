@@ -3,7 +3,7 @@ Lambda script to automatically turn on/off EC2 Auto Scaling Groups based on week
 
 ## How it works?
 
-This script basically terminate instances attached to ASGs and pause the ASG`s Launch process, disabling it to launch new EC2 instances when you get out of the work hour/day and resume the ASG's Launch process when you get back into work hour/day.
+This script basically terminate instances attached to ASGs and pause the ASG's Launch process, disabling it to launch new EC2 instances when you get out of the work hour/day and resume the ASG's Launch process when you get back into work hour/day.
 
 ## Configuration
 
