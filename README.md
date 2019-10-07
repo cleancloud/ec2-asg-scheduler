@@ -7,7 +7,7 @@ This script basically terminate instances attached to ASGs and pause the ASG's L
 
 ## Configuration
 
-### Variables 
+### Variables
 
 Before running, you need to set these variables:
 
