@@ -25,6 +25,7 @@ Make sure the Lambda function have the right permissions to manage EC2 instances
     "Action": [
       "autoscaling:ResumeProcesses",
       "autoscaling:SuspendProcesses",
+      "autoscaling:DescribeAutoScalingGroups",
       "ec2:TerminateInstances"
     ]
 
