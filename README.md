@@ -14,7 +14,7 @@ Before running, you need to set these variables:
 - `AUTO_SCALING_GROUPS`: names of the Auto Scaling Groups to be scheduled separated by comma
 - `TIMEZONE`: the timezone following the pattern `America/Sao_Paulo`
 - `PERIOD`: the start and end times, in the format: `08:00-17:00`
-- `WORK_DAYS`: the work days abbreviated separated by comma. Example: `mon,tue,wed,thu,fri`
+- `WORK_DAYS`: the working days separated by comma. Example: `mon,tue,wed,thu,fri`
 
 If you want to test it before deploying to Lambda, you can run locally: `python3 main.py`
 
@@ -34,7 +34,7 @@ Setup a CloudWatch Event to trigger the Lambda function periodically as your nee
 
 ## Running
 
-After configuration the function is ready to be deployed.  
-The handler function is `main.lambda_handler`.
+The function is ready to be deployed right after its configuration. 
+Lambda handler function is `main.lambda_handler`.
 
-> **Important**: the script will only print logs when it make some change (on/off) to EC2 instances and ASGs and in case of a fail or misconfiguration. It will not log everytime it runs.
+> **Important**: the script print logs when it make changes (on/off) to EC2 instances, ASGs or in case of failures or misconfiguration.
