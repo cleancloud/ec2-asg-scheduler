@@ -25,7 +25,7 @@ Make sure the Lambda function have the right permissions to manage EC2 instances
     "Action": [
       "autoscaling:ResumeProcesses",
       "autoscaling:SuspendProcesses",
-      "ec2:StopInstances"
+      "ec2:TerminateInstances"
     ]
 
 ### CloudWatch Events
