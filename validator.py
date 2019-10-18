@@ -38,6 +38,7 @@ asgs = os.environ['AUTO_SCALING_GROUPS'].split(',')
 
 def validate_vars():
   validate_timezone()
+  validate_work_days()
   validate_periods()
 
 def validate_work_days():
